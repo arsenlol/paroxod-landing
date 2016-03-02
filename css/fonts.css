@@ -1,0 +1,26 @@
+/*panton*/
+@font-face {
+    font-family: panton;
+    src: url('../fonts/Panton-Regular.ttf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: panton;
+    src: url('../fonts/Panton-Bold.ttf');
+    font-weight: 700;
+}
+@font-face {
+    font-family: panton;
+    src: url('../fonts/Panton-Light.ttf');
+    font-weight: 300;
+}
+@font-face {
+    font-family: panton;
+    src: url('../fonts/Panton-Black.ttf');
+    font-weight: 900;
+}
+@font-face {
+    font-family: panton;
+    src: url('../fonts/Panton-Italic.ttf');
+    font-style:italic;
+}
