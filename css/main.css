@@ -68,6 +68,8 @@ header {
 header nav {
   margin-top: 50px;
   text-align: right; }
+  header nav a:active span, header nav a:visited span, header nav a:active, header nav a:visited {
+    color: #fff; }
 
 header nav ul {
   padding: 20px 0 8px;
@@ -231,79 +233,80 @@ header h1 + p {
     background-color: #fff;
     transform: scale(1); }
 
-.portfolio h1 + p {
-  width: 900px; }
-.portfolio .svg-defs {
-  position: absolute;
-  width: 0;
-  height: 0; }
-.portfolio .latest-work {
-  margin: 0 0;
-  padding-bottom: 80px;
-  position: relative; }
-  .portfolio .latest-work .bit-left {
-    width: 34px;
-    height: 56px;
-    background: url(../img/portfolio.png);
-    transform: rotate(180deg);
+.portfolio {
+  padding: 50px 0 100px; }
+  .portfolio h1 + p {
+    width: 900px; }
+  .portfolio .svg-defs {
     position: absolute;
-    left: -30px;
-    top: 140px;
-    transition: background .3s;
-    cursor: pointer; }
-  .portfolio .latest-work .bit-right {
-    width: 34px;
-    height: 56px;
-    background: url(../img/portfolio.png);
-    position: absolute;
-    right: -30px;
-    top: 140px;
-    transition: background .3s;
-    cursor: pointer; }
-  .portfolio .latest-work .bit-left:hover, .portfolio .latest-work .bit-right:hover {
-    background: url(../img/portfolio-hover.png); }
-.portfolio .latest-work svg a {
-  text-decoration: none; }
-.portfolio .latest-work svg text {
-  font-size: 36px;
-  fill: #ffffff;
-  line-height: 1; }
-.portfolio .latest-work svg .hover {
-  opacity: 0;
-  transform: scale(0.8);
-  transform-origin: 50%;
-  transition: 0.25s ease; }
-.portfolio .latest-work svg a:hover .hover {
-  opacity: 1;
-  transform: scale(1); }
-.portfolio .latest-work .col-itm {
-  text-align: center; }
-  .portfolio .latest-work .col-itm .title {
-    font-size: 20px; }
-  .portfolio .latest-work .col-itm .info a {
-    border-top: 1px solid #ccc;
-    padding: 5px 40px 0 25px;
-    margin: 5px 0;
-    display: inline-block;
-    font-weight: 700; }
-  .portfolio .latest-work .col-itm .info a:before {
-    width: 15px;
-    height: 15px;
-    content: '';
-    display: inline-block;
-    margin-right: 5px;
-    background: url(../img/link-icon.png) no-repeat 0 0; }
-  .portfolio .latest-work .col-itm .year {
-    border-top: 1px solid #ccc;
-    display: inline-block;
-    padding: 5px 30px; }
-  .portfolio .latest-work .col-itm .year:before {
-    width: 15px;
-    height: 15px;
-    content: '';
-    display: inline-block;
-    margin-right: 5px;
-    background: url(../img/link-icon.png) no-repeat -21px 1px; }
+    width: 0;
+    height: 0; }
+  .portfolio .latest-work {
+    position: relative; }
+    .portfolio .latest-work .bit-left {
+      width: 34px;
+      height: 56px;
+      background: url(../img/portfolio.png);
+      transform: rotate(180deg);
+      position: absolute;
+      left: -30px;
+      top: 140px;
+      transition: background .3s;
+      cursor: pointer; }
+    .portfolio .latest-work .bit-right {
+      width: 34px;
+      height: 56px;
+      background: url(../img/portfolio.png);
+      position: absolute;
+      right: -30px;
+      top: 140px;
+      transition: background .3s;
+      cursor: pointer; }
+    .portfolio .latest-work .bit-left:hover, .portfolio .latest-work .bit-right:hover {
+      background: url(../img/portfolio-hover.png); }
+  .portfolio .latest-work svg a {
+    text-decoration: none; }
+  .portfolio .latest-work svg text {
+    font-size: 36px;
+    fill: #ffffff;
+    line-height: 1; }
+  .portfolio .latest-work svg .hover {
+    opacity: 0;
+    transform: scale(0.8);
+    transform-origin: 50%;
+    transition: 0.25s ease; }
+  .portfolio .latest-work svg a:hover .hover {
+    opacity: 1;
+    transform: scale(1); }
+  .portfolio .latest-work .col-itm {
+    outline: none;
+    text-align: center; }
+    .portfolio .latest-work .col-itm .title {
+      font-size: 20px; }
+    .portfolio .latest-work .col-itm .info a {
+      border-top: 1px solid #ccc;
+      padding: 5px 40px 0 25px;
+      margin: 5px 0;
+      display: inline-block;
+      font-weight: 700; }
+    .portfolio .latest-work .col-itm .info a:before {
+      width: 15px;
+      height: 15px;
+      content: '';
+      display: inline-block;
+      margin-right: 5px;
+      background: url(../img/link-icon.png) no-repeat 0 0; }
+    .portfolio .latest-work .col-itm .year {
+      border-top: 1px solid #ccc;
+      display: inline-block;
+      padding: 5px 30px; }
+    .portfolio .latest-work .col-itm .year:before {
+      width: 15px;
+      height: 15px;
+      content: '';
+      display: inline-block;
+      margin-right: 5px;
+      background: url(../img/link-icon.png) no-repeat -21px 1px; }
 
 .team {
   padding: 50px 0 100px;
@@ -467,7 +470,8 @@ header h1 + p {
     margin: 35px 0; }
     .bitrix .bitrix-slider .slick-slide {
       opacity: .8;
-      transition: .3s; }
+      transition: .3s;
+      outline: none; }
     .bitrix .bitrix-slider .slick-slide:hover {
       opacity: 1; }
     .bitrix .bitrix-slider .bit-left {
@@ -495,6 +499,10 @@ header h1 + p {
 
 .contacts {
   position: relative; }
+  .contacts h1 {
+    margin-top: 70px; }
+  .contacts h1 + p {
+    margin-bottom: 50px; }
   .contacts .map-bg {
     height: 450px; }
   .contacts .footer {
@@ -527,7 +535,7 @@ header h1 + p {
     height: 500px;
     padding: 30px;
     position: absolute;
-    top: 176px;
+    top: 187px;
     right: 15%;
     background-color: #0b5998;
     color: #fff; }
