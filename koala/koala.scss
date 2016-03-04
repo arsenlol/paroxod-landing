@@ -15,6 +15,7 @@ body {
     p.blue {color:#333;}
 
 }
+body.modal-open {overflow:auto;}
 
 header {background:url(../img/head-bg.jpg) no-repeat top left fixed}
 .logo {margin-top:50px;}
@@ -82,6 +83,24 @@ header h1+p {width:980px;padding:30px;background-color: rgba(11, 88, 152,.8);col
 }
 .portfolio {
     h1+p {width:900px;}
+    .svg-defs {position:absolute;width:0;height:0;}
+    .latest-work {margin: 0 0;  padding-bottom: 80px; position:relative;  
+        .bit-left {width:34px;height:56px;background:url(../img/portfolio.png);transform:rotate(180deg);position:absolute;left:-30px;top:140px;transition:background .3s;cursor:pointer;}
+        .bit-right {width:34px;height:56px;background:url(../img/portfolio.png);position:absolute;right:-30px; top:140px;transition:background .3s;cursor:pointer;}
+        .bit-left:hover,.bit-right:hover {background:url(../img/portfolio-hover.png);}
+    }
+    .latest-work svg a{  text-decoration: none; }
+    .latest-work svg text { font-size: 36px;  fill: #ffffff;  line-height: 1;}
+    .latest-work svg .hover {  opacity: 0; transform: scale(.8); transform-origin: 50%; transition: 0.25s ease; }
+    .latest-work svg a:hover .hover {opacity: 1; transform: scale(1);}
+    .latest-work .col-itm {
+        text-align: center;
+        .title {font-size:20px;}
+        .info a {border-top: 1px solid #ccc;padding: 5px 40px 0 25px ;margin:5px 0;display: inline-block;font-weight:700;}
+        .info a:before { width: 15px; height: 15px; content: '';  display: inline-block;  margin-right: 5px; background: url(../img/link-icon.png) no-repeat 0 0;}
+        .year {border-top: 1px solid #ccc;display: inline-block;padding:5px 30px;}
+        .year:before { width: 15px; height: 15px; content: '';  display: inline-block;  margin-right: 5px; background: url(../img/link-icon.png) no-repeat -21px 1px;}
+    }
 }
 .team {
     padding:50px 0 100px;
@@ -100,10 +119,14 @@ header h1+p {width:980px;padding:30px;background-color: rgba(11, 88, 152,.8);col
     .mate h5 {border: 1px solid #0b5998;font-size: 18px;font-weight: 400;line-height: 24px;color:#0b5998;width:200px;padding:10px 0;display:block;margin:0 auto 15px;}
     .mate p {font-size: 14px;line-height: 24px;display:block;margin:0 auto;}
     .result {display:block;border-style: solid;border-width: 26px 27px 27px;-moz-border-image: url(../img/result-border.png) 26 27 27 stretch;-webkit-border-image: url(../img/result-border.png) 26 27 27 stretch;-o-border-image: url(../img/result-border.png) 26 27 27 stretch;border-image: url(../img/result-border.png) 26 27 27 stretch;text-align:center;position:relative;z-index:1;}
-    .result img {border:1px solid #ccc;position:relative;}
-    .result:before {content:''; position:absolute; top: -140px; left: -270px; width: 737px; height: 552px; z-index: 0; display: block;  background: url(../img/result-before.png) no-repeat;}
+    .result img {border:1px solid #ccc;height: 280px;width: 200px;}
+    .results>div:before {content:''; position:absolute; top: -113px; left: -228px; width: 737px; height: 552px; z-index: 0; display: block;  background: url(../img/result-before.png) no-repeat;}
 }
 .bitrix {
+    .slider-block {
+        background-color: rgba(255,255,255,.8);
+        h2 {font-size: 24px;line-height: 30px;margin:30px 5px;}
+    }
     h1+p {display:block;margin:0 auto;}
     padding:50px 0 100px; background:url(../img/bitrix-bg.jpg) no-repeat top left fixed;
     p {margin:20px 0;color:#fff;font-size: 18px;line-height: 24px;}
@@ -124,7 +147,14 @@ header h1+p {width:980px;padding:30px;background-color: rgba(11, 88, 152,.8);col
         p:nth-child(3):before {content:'7'; padding: 14px 17px;}
         p:nth-child(4):before {content:'8'; padding: 14px 16px;}
     }
-    .bitrix-slider {height:100px;background-color: #ccc;}
+    .bitrix-slider {position:relative;left: 50px; margin: 35px 0;        
+        .slick-slide {opacity:.8;transition:.3s;}
+        .slick-slide:hover {opacity:1;}
+        .bit-left {width:23px;height:44px;background:url(../img/bit-left.png);position:absolute;left:-45px;cursor:pointer;transition:background .3s;}
+        .bit-right {width:23px;height:44px;transform:rotate(180deg);background:url(../img/bit-left.png);position:absolute;right:-20px; top:0px;cursor:pointer;transition:background .3s;}
+        .bit-left:hover {background:url(../img/bit-hover.png);}
+        .bit-right:hover {background:url(../img/bit-hover.png);}
+    }
 }
 .contacts {position:relative;
     .map-bg {height:450px;}
@@ -142,7 +172,12 @@ header h1+p {width:980px;padding:30px;background-color: rgba(11, 88, 152,.8);col
         p.call-number:before {content:url(../img/tel-icon.png)}
         p.mail:before {content:url(../img/mail-icon.png)}
         p.address:before {content:url(../img/map-icon.png)}
-        form.apply {background-color: #fff;    padding: 15px 50px; margin: 20px 0;
+        
+    }
+    
+}
+form.apply {
+            background-color: #fff;    padding: 15px 50px; margin: 20px 0;
             h2 {color:#0b5998;font-size: 24px;font-weight: 700;}
             fieldset {border:none;
                 input {display:block;border:none;border-bottom:1px solid #ccc;width:100%;text-indent:10px;padding:10px 20px 5px;font-style:italic;margin:10px 0;color:#333;position:relative;}
@@ -150,11 +185,15 @@ header h1+p {width:980px;padding:30px;background-color: rgba(11, 88, 152,.8);col
                 input:nth-child(1) {background:url(../img/inp-name.png) left center no-repeat;}
                 input:nth-child(2) {background:url(../img/inp-tel.png) left center no-repeat;}
                 input:nth-child(3) {background:url(../img/inp-mail.png) left center no-repeat;}
-                input[type="submit"] {margin:30px auto 0;width:200px;padding:20px 0;background-color: transparent; border:3px solid #0b5998;font-style:normal;text-transform:uppercase;font-size: 19px;font-weight: 300;color:#0b5998;}
+                input[type="submit"] {margin:30px auto 0;width:200px;padding:20px 0;background-color: transparent; border:3px solid #0b5998;font-style:normal;text-transform:uppercase;font-size: 19px;font-weight: 300;color:#0b5998;transition:.3s;}
+                input[type="submit"]:hover {background-color: #e39704; text-decoration: none;  color:#fff; border:3px solid #e39704;}
             }
             
             
         }
+.modal.fade {
+    .dismiss-apply {background:url(../img/modal-close.png);width:22px;height:22px;position:absolute;right:15px;top:15px;display:block;cursor:pointer;}
+    form.apply {
+        h2 {text-align:center;}
     }
-    
 }

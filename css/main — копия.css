@@ -46,9 +46,6 @@ body {
   body p.blue {
     color: #333; }
 
-body.modal-open {
-  overflow: auto; }
-
 header {
   background: url(../img/head-bg.jpg) no-repeat top left fixed; }
 
@@ -233,77 +230,6 @@ header h1 + p {
 
 .portfolio h1 + p {
   width: 900px; }
-.portfolio .svg-defs {
-  position: absolute;
-  width: 0;
-  height: 0; }
-.portfolio .latest-work {
-  margin: 0 0;
-  padding-bottom: 80px;
-  position: relative; }
-  .portfolio .latest-work .bit-left {
-    width: 34px;
-    height: 56px;
-    background: url(../img/portfolio.png);
-    transform: rotate(180deg);
-    position: absolute;
-    left: -30px;
-    top: 140px;
-    transition: background .3s;
-    cursor: pointer; }
-  .portfolio .latest-work .bit-right {
-    width: 34px;
-    height: 56px;
-    background: url(../img/portfolio.png);
-    position: absolute;
-    right: -30px;
-    top: 140px;
-    transition: background .3s;
-    cursor: pointer; }
-  .portfolio .latest-work .bit-left:hover, .portfolio .latest-work .bit-right:hover {
-    background: url(../img/portfolio-hover.png); }
-.portfolio .latest-work svg a {
-  text-decoration: none; }
-.portfolio .latest-work svg text {
-  font-size: 36px;
-  fill: #ffffff;
-  line-height: 1; }
-.portfolio .latest-work svg .hover {
-  opacity: 0;
-  transform: scale(0.8);
-  transform-origin: 50%;
-  transition: 0.25s ease; }
-.portfolio .latest-work svg a:hover .hover {
-  opacity: 1;
-  transform: scale(1); }
-.portfolio .latest-work .col-itm {
-  text-align: center; }
-  .portfolio .latest-work .col-itm .title {
-    font-size: 20px; }
-  .portfolio .latest-work .col-itm .info a {
-    border-top: 1px solid #ccc;
-    padding: 5px 40px 0 25px;
-    margin: 5px 0;
-    display: inline-block;
-    font-weight: 700; }
-  .portfolio .latest-work .col-itm .info a:before {
-    width: 15px;
-    height: 15px;
-    content: '';
-    display: inline-block;
-    margin-right: 5px;
-    background: url(../img/link-icon.png) no-repeat 0 0; }
-  .portfolio .latest-work .col-itm .year {
-    border-top: 1px solid #ccc;
-    display: inline-block;
-    padding: 5px 30px; }
-  .portfolio .latest-work .col-itm .year:before {
-    width: 15px;
-    height: 15px;
-    content: '';
-    display: inline-block;
-    margin-right: 5px;
-    background: url(../img/link-icon.png) no-repeat -21px 1px; }
 
 .team {
   padding: 50px 0 100px;
@@ -381,13 +307,12 @@ header h1 + p {
     z-index: 1; }
   .team .result img {
     border: 1px solid #ccc;
-    height: 280px;
-    width: 200px; }
-  .team .results > div:before {
+    position: relative; }
+  .team .result:before {
     content: '';
     position: absolute;
-    top: -113px;
-    left: -228px;
+    top: -140px;
+    left: -270px;
     width: 737px;
     height: 552px;
     z-index: 0;
@@ -397,12 +322,6 @@ header h1 + p {
 .bitrix {
   padding: 50px 0 100px;
   background: url(../img/bitrix-bg.jpg) no-repeat top left fixed; }
-  .bitrix .slider-block {
-    background-color: rgba(255, 255, 255, 0.8); }
-    .bitrix .slider-block h2 {
-      font-size: 24px;
-      line-height: 30px;
-      margin: 30px 5px; }
   .bitrix h1 + p {
     display: block;
     margin: 0 auto; }
@@ -462,36 +381,8 @@ header h1 + p {
       content: '8';
       padding: 14px 16px; }
   .bitrix .bitrix-slider {
-    position: relative;
-    left: 50px;
-    margin: 35px 0; }
-    .bitrix .bitrix-slider .slick-slide {
-      opacity: .8;
-      transition: .3s; }
-    .bitrix .bitrix-slider .slick-slide:hover {
-      opacity: 1; }
-    .bitrix .bitrix-slider .bit-left {
-      width: 23px;
-      height: 44px;
-      background: url(../img/bit-left.png);
-      position: absolute;
-      left: -45px;
-      cursor: pointer;
-      transition: background .3s; }
-    .bitrix .bitrix-slider .bit-right {
-      width: 23px;
-      height: 44px;
-      transform: rotate(180deg);
-      background: url(../img/bit-left.png);
-      position: absolute;
-      right: -20px;
-      top: 0px;
-      cursor: pointer;
-      transition: background .3s; }
-    .bitrix .bitrix-slider .bit-left:hover {
-      background: url(../img/bit-hover.png); }
-    .bitrix .bitrix-slider .bit-right:hover {
-      background: url(../img/bit-hover.png); }
+    height: 100px;
+    background-color: #ccc; }
 
 .contacts {
   position: relative; }
@@ -542,64 +433,45 @@ header h1 + p {
       content: url(../img/mail-icon.png); }
     .contacts .bot-form p.address:before {
       content: url(../img/map-icon.png); }
-
-form.apply {
-  background-color: #fff;
-  padding: 15px 50px;
-  margin: 20px 0; }
-  form.apply h2 {
-    color: #0b5998;
-    font-size: 24px;
-    font-weight: 700; }
-  form.apply fieldset {
-    border: none; }
-    form.apply fieldset input {
-      display: block;
-      border: none;
-      border-bottom: 1px solid #ccc;
-      width: 100%;
-      text-indent: 10px;
-      padding: 10px 20px 5px;
-      font-style: italic;
-      margin: 10px 0;
-      color: #333;
-      position: relative; }
-    form.apply fieldset input:focus {
-      outline: none; }
-    form.apply fieldset input:nth-child(1) {
-      background: url(../img/inp-name.png) left center no-repeat; }
-    form.apply fieldset input:nth-child(2) {
-      background: url(../img/inp-tel.png) left center no-repeat; }
-    form.apply fieldset input:nth-child(3) {
-      background: url(../img/inp-mail.png) left center no-repeat; }
-    form.apply fieldset input[type="submit"] {
-      margin: 30px auto 0;
-      width: 200px;
-      padding: 20px 0;
-      background-color: transparent;
-      border: 3px solid #0b5998;
-      font-style: normal;
-      text-transform: uppercase;
-      font-size: 19px;
-      font-weight: 300;
-      color: #0b5998;
-      transition: .3s; }
-    form.apply fieldset input[type="submit"]:hover {
-      background-color: #e39704;
-      text-decoration: none;
-      color: #fff;
-      border: 3px solid #e39704; }
-
-.modal.fade .dismiss-apply {
-  background: url(../img/modal-close.png);
-  width: 22px;
-  height: 22px;
-  position: absolute;
-  right: 15px;
-  top: 15px;
-  display: block;
-  cursor: pointer; }
-.modal.fade form.apply h2 {
-  text-align: center; }
+    .contacts .bot-form form.apply {
+      background-color: #fff;
+      padding: 15px 50px;
+      margin: 20px 0; }
+      .contacts .bot-form form.apply h2 {
+        color: #0b5998;
+        font-size: 24px;
+        font-weight: 700; }
+      .contacts .bot-form form.apply fieldset {
+        border: none; }
+        .contacts .bot-form form.apply fieldset input {
+          display: block;
+          border: none;
+          border-bottom: 1px solid #ccc;
+          width: 100%;
+          text-indent: 10px;
+          padding: 10px 20px 5px;
+          font-style: italic;
+          margin: 10px 0;
+          color: #333;
+          position: relative; }
+        .contacts .bot-form form.apply fieldset input:focus {
+          outline: none; }
+        .contacts .bot-form form.apply fieldset input:nth-child(1) {
+          background: url(../img/inp-name.png) left center no-repeat; }
+        .contacts .bot-form form.apply fieldset input:nth-child(2) {
+          background: url(../img/inp-tel.png) left center no-repeat; }
+        .contacts .bot-form form.apply fieldset input:nth-child(3) {
+          background: url(../img/inp-mail.png) left center no-repeat; }
+        .contacts .bot-form form.apply fieldset input[type="submit"] {
+          margin: 30px auto 0;
+          width: 200px;
+          padding: 20px 0;
+          background-color: transparent;
+          border: 3px solid #0b5998;
+          font-style: normal;
+          text-transform: uppercase;
+          font-size: 19px;
+          font-weight: 300;
+          color: #0b5998; }
 
 /*# sourceMappingURL=main.css.map */
