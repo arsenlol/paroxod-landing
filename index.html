@@ -19,6 +19,25 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
+        <div class="modal fade" id="apply" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="dismiss-apply" data-dismiss="modal"></div>
+                <form action="" class="apply">
+                      
+                       <h2>Оставить заявку</h2>
+                       <fieldset>
+                           <input type="text" placeholder="Ваше имя*" required>
+                           <input type="tel" placeholder="Ваш телефон*" required>
+                           <input type="email" placeholder="Ваш email (не обязательно)">
+                           <input type="submit" value="Отправить">
+                       </fieldset>
+                </form>
+                
+            </div>
+          </div>
+        </div>
         <header>
             <div class="container">
                 <div class="row">
@@ -41,7 +60,7 @@
                     <div class="col-md-12">
                         <h1 class="white">Готовый интернет-магазин на 1С-Битрикс за 24 часа</h1>
                         <p>Стоимость - <strong>от 9 999 грн</strong>. Запуск - <strong>от 24 часов</strong>. Адаптация - <strong>от 3 дней</strong>. Интернет - это море возможностей. Давайте их реализуем.</p>
-                        <div class="order"><a href="#">Заказать</a></div>
+                        <div class="order"><a href="#apply" data-toggle="modal">Заказать</a></div>
                     </div>
                 </div>
             </div>
@@ -52,19 +71,19 @@
                    <p>Предоставлен полный спектр услуг по разработке, продвижению сайтов на 1С Битрикс. Также занимаемся переносом уже готовых сайтов на 1С Битрикс.</p>
                <div class="row">
                    
-                   <a class="col-md-2 col-md-offset-1 serv-block">
+                   <a href="http://paroxod.net/uslugi/shop/" class="col-md-2 col-md-offset-1 serv-block">
                            <div class="serv-icon"></div>
                            <p>Разработка уникального<br>интернет-магазина<br>от 32 000 грн.</p>
                    </a>
-                   <a class="col-md-2 serv-block">
+                   <a href="http://paroxod.net/uslugi/seo/" class="col-md-2 serv-block">
                            <div class="serv-icon"></div>
                            <p>Адаптация готового<br>интернет-магазина<br>от 9 999 грн.</p>
                    </a>
-                   <a class="col-md-2 serv-block">
+                   <a href="http://paroxod.net/uslugi/mobile/" class="col-md-2 serv-block">
                            <div class="serv-icon"></div>
                            <p>Перенос сайтов<br>на 1с-Битрикс<br>от 5 000 грн.</p>
                    </a>
-                   <a class="col-md-2 serv-block">
+                   <a href="http://paroxod.net/uslugi/support/" class="col-md-2 serv-block">
                            <div class="serv-icon"></div>
                            <p>Продвижение<br>интернет-магазинов<br>от 7 000 грн.</p>
                    </a>
@@ -80,19 +99,19 @@
                         <h2 class="blue">Старт</h2>
                         <p>Этот пакет подойдет прежде всего молодым компаниям, которые только начинают свой путь в мире онлайн-шопинга. Или для начинающих предпринимателей, которые начинают свой бизнес.</p>
                         <strong>от 9 999 грн.</strong>
-                        <div><a href="#">Отправить завяку</a></div>
+                        <div><a href="#apply" data-toggle="modal">Отправить завяку</a></div>
                     </div>
                     <div class="col-md-4 cost-block">
                         <h2 class="blue">Стандарт</h2>
                         <p>Этот пакет подойдет прежде всего молодым компаниям, которые только начинают свой путь в мире онлайн-шопинга. Или для начинающих предпринимателей, которые начинают свой бизнес. Этот пакет подойдет прежде всего молодым компаниям, которые только начинают свой путь в мире онлайн-шопинга.</p>
                         <strong>от 19 999 грн.</strong>
-                        <div><a href="#">Отправить завяку</a></div>
+                        <div><a href="#apply" data-toggle="modal">Отправить завяку</a></div>
                     </div>
                     <div class="col-md-4 cost-block">
                         <h2 class="blue">Максимум</h2>
                         <p>Этот пакет подойдет прежде всего молодым компаниям, которые только начинают свой путь в мире онлайн-шопинга. Или для начинающих предпринимателей, которые начинают свой бизнес. онлайн-шопинга.</p>
                         <strong>от 49 999 грн.</strong>
-                        <div><a href="#">Отправить завяку</a></div>
+                        <div><a href="#apply" data-toggle="modal">Отправить завяку</a></div>
                     </div>
                 </div>
             </div>
@@ -104,7 +123,96 @@
 который принесет ему новых клиентов  и увеличит продажи. Мы выделили 6 основных причин,
 по которых Вы получите преемущества работы с нами</p>
                 <div class="row">
-                    
+                   <svg class="svg-defs">
+                      <defs>
+                            <clipPath id="clipping" x="10" y="10">
+                              <polygon points="15,90 147,20 278,90 278,240 147,310 15, 240"></polygon>
+                            </clipPath>
+                            <filter id="f3">
+                            <feOffset result="offOut" in="SourceGraphic" dx="0" dy="4"></feOffset>
+                          <feColorMatrix result="matrixOut" in="offOut" type="matrix" values="0.2 0 0 0 0 0 0.2 0 0 0 0 0 0.2 0 0 0 0 0 0.85 0"></feColorMatrix>
+                          <feGaussianBlur result="blurOut" in="matrixOut" stdDeviation="5"></feGaussianBlur>
+                          <feBlend in="SourceGraphic" in2="blurOut" mode="normal"></feBlend>
+                            </filter>
+                       </defs>
+                    </svg>
+                    <div class="latest-work col-md-12">
+                        <div class="col-itm col-md-4">
+                                <svg width="295" height="330">
+                                    <a xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://paroxod.net/portfolio/next-models/" target="_blank">
+                                        <polygon points="15,90 147,20 278,90 278,240 147,310 15, 240" filter="url(#f3)" stroke="white" stroke-width="10"></polygon>
+
+                                        <image x="15" y="15" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/portfolio1.jpg" width="264" height="315" clip-path="url(#clipping)"></image>
+
+                                        <polygon class="hover" points="25,95 147,30 268,95 268,235 147,300 25, 235" style="fill:#e39704;fill-opacity:0.8;">    
+                                        </polygon>
+                                        <text x="27%" y="49%" class="hover">Next <tspan x="27%" y="59%">Models</tspan></text>
+                                    </a>
+                                </svg>
+                                <div class="info">
+                                    <div class="title">Интернет-магазина
+                    качественных 3D моделей
+                    элементов интерьера</div>
+                                   <a href="http://next-models.net/" target="_blank">next-models.net</a><br>
+                                   <div class="year">2015</div>
+                                </div>
+                        </div>
+                        <div class="col-itm col-md-4">
+                                <svg width="295" height="330">
+                                    <a xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://paroxod.net/portfolio/next-models/" target="_blank">
+                                        <polygon points="15,90 147,20 278,90 278,240 147,310 15, 240" filter="url(#f3)" stroke="white" stroke-width="10"></polygon>
+
+                                        <image x="15" y="15" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/portfolio1.jpg" width="264" height="315" clip-path="url(#clipping)"></image>
+
+                                        <polygon class="hover" points="25,95 147,30 268,95 268,235 147,300 25, 235" style="fill:#e39704;fill-opacity:0.8;">    
+                                        </polygon>
+                                        <text x="27%" y="49%" class="hover">test <tspan x="27%" y="59%">test</tspan></text>
+                                    </a>
+                                </svg>
+                                <div class="info">
+                                    <div class="title">test</div>
+                                   <a href="http://next-models.net/" target="_blank">test</a><br>
+                                   <div class="year">test</div>
+                                </div>
+                        </div>
+                        <div class="col-itm col-md-4">
+                                <svg width="295" height="330">
+                                    <a xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://paroxod.net/portfolio/obagi/" target="_blank">
+                                        <polygon points="15,90 147,20 278,90 278,240 147,310 15, 240" filter="url(#f3)" stroke="white" stroke-width="10"></polygon>
+
+                                        <image x="15" y="15" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/portfolio2.jpg" width="264" height="315" clip-path="url(#clipping)"></image>
+
+                                        <polygon class="hover" points="25,95 147,30 268,95 268,235 147,300 25, 235" style="fill:#e39704;fill-opacity:0.8;">    
+                                        </polygon>
+                                        <text x="27%" y="49%" class="hover">Obagi</text>
+                                    </a>
+                                </svg>
+                                <div class="info">
+                                    <div class="title">Интернет-магазина медицинских препаратов «Obagi»</div>
+                                   <a href="http://obagi.com.ua/" target="_blank">obagi.com.ua</a><br>
+                                   <div class="year">2015</div>
+                                </div>
+                        </div>
+                        <div class="col-itm col-md-4">
+                                <svg width="295" height="330">
+                                    <a xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://paroxod.net/portfolio/minoxidil-shop/" target="_blank">
+                                        <polygon points="15,90 147,20 278,90 278,240 147,310 15, 240" filter="url(#f3)" stroke="white" stroke-width="10"></polygon>
+
+                                        <image x="15" y="15" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/portfolio3.jpg" width="264" height="315" clip-path="url(#clipping)"></image>
+
+                                        <polygon class="hover" points="25,95 147,30 268,95 268,235 147,300 25, 235" style="fill:#e39704;fill-opacity:0.8;">    
+                                        </polygon>
+                                        <text x="27%" y="49%" class="hover">Minoxidil <tspan x="27%" y="59%">shop</tspan></text>
+                                    </a>
+                                </svg>
+                                <div class="info">
+                                    <div class="title">Интернет-магазин миноксидилов «Minoxidil-shop»</div>
+                                   <a href="http://minoxidil-shop.com.ua/" target="_blank">minoxidil-shop.com.ua</a><br>
+                                   <div class="year">2015</div>
+                                </div>
+                        </div>
+                        
+                    </div>
                 </div>
             </div>
         </section>
@@ -194,8 +302,20 @@
                         <p><strong>Мощная защита</strong> - компания реализовала надежную систему защиты от спам-атак, хакерских атак, взломов, а также постоянно обновляет данные для их быстрого восстановления.</p>
                         <p><strong>Постоянная техподдержка</strong> - вы не зависите от конкретного разработчика и при необходимости можете обратиться в службу техподдержки 1С-Битрикс.</p>
                     </div>
-                    <div class="col-md-12 bitrix-slider">
-                        
+                    <div class="col-md-12 slider-block">
+                        <div class="col-md-4"><h2>Веб проекты разработанные на платформе 1С-Битрикс</h2></div>
+                        <div class="col-md-7 col-md-offset-1 bitrix-slider">
+                            <div><img src="img/bit1.jpg" alt=""></div>
+                            <div><img src="img/bit2.jpg" alt=""></div>
+                            <div><img src="img/bit3.jpg" alt=""></div>
+                            <div><img src="img/bit4.jpg" alt=""></div>
+                            <div><img src="img/bit5.jpg" alt=""></div>
+                            <div><img src="img/bit6.jpg" alt=""></div>
+                            <div><img src="img/bit7.jpg" alt=""></div>
+                            <div><img src="img/bit8.jpg" alt=""></div>
+                            <div><img src="img/bit9.jpg" alt=""></div>
+                            <div><img src="img/bit10.jpg" alt=""></div>
+                        </div>
                     </div>
 
                 </div>
@@ -247,7 +367,7 @@
         
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
-        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/vendor/bootstrap.js"></script>
         <script src="js/grayscale.js"></script>
         <script src="js/jquery.magnific-popup.js"></script>
         <script src="js/slick.min.js"></script>
