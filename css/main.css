@@ -65,6 +65,9 @@ header {
   margin: 0 0 0 20px;
   padding: 20px; }
 
+.nav-fixed {width: 100%;position: fixed;left: 37.5%;margin-left: -37.5%;background-color: #0b5998; border-bottom:1px solid #f9f9f9;z-index:2;transition:background 3.s;}
+.nav-fixed .logo, .nav-fixed nav {margin:30px 0;}
+
 header nav {
   margin-top: 50px;
   text-align: right; }
@@ -93,6 +96,7 @@ nav ul li a span {
 nav ul li a:hover span {
   color: #fff;
   padding: 10px 12px 6px; }
+nav ul li a:focus {color:#fff;}
 
 header h1 {
   width: 700px;
@@ -382,6 +386,7 @@ header h1 + p {
     text-align: center;
     position: relative;
     z-index: 1; }
+    .mfp-zoom-out-cur, .mfp-zoom-out-cur .mfp-image-holder .mfp-close {cursor:default;}
   .team .result img {
     border: 1px solid #ccc;
     height: 280px;
@@ -530,6 +535,8 @@ header h1 + p {
       background: transparent url(../img/link-fb.png) center no-repeat; }
     .contacts .footer .link-youtube {
       background: transparent url(../img/link-youtube.png) center no-repeat; }
+    .contacts .footer .link-google {
+      background: transparent url(../img/link-google.png) center no-repeat; }
   .contacts .bot-form {
     width: 500px;
     height: 500px;
