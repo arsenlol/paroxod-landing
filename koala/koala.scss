@@ -6,7 +6,7 @@ body {
     section h1.blue:after {content:"";position:absolute;bottom:-10px; left:46.5%;width: 86px;height: 4px;background-color: #0b5998;border-radius: 2px;}
     h1+p {width: 650px;color: #666;line-height: 24px;text-align:center;margin:0 auto;margin-bottom:40px;}
     //i+p {margin:0 0 0 5px;display:inline-block;}*
-    a:focus, a:hover {text-decoration:none;outline:none}
+    a:focus, a:hover {text-decoration:none;outline:none;}
     strong, b {font-weight:700;}
     
     .white {color:#fff;}
@@ -21,7 +21,11 @@ header {background:url(../img/head-bg.jpg) no-repeat top left fixed}
 .logo {margin-top:50px;}
 .logo img {display:inline-block;}
 .logo p {color:#6cf;border-left:1px solid #6cf;display:inline-block; margin: 0 0 0 20px; padding: 20px;}
-header nav {margin-top:50px;text-align:right;}
+header nav {
+    margin-top:50px;text-align:right;
+    a:active span, a:visited span, a:active, a:visited {color:#fff;}
+}
+
 header nav ul {padding:20px 0 8px; margin:0;border-bottom:1px solid #fff;display: inline-block;overflow:hidden;}
 nav ul li {display:inline-block;margin-left: -.36em;}
 nav ul li a {color:#fff;}
@@ -81,10 +85,10 @@ header h1+p {width:980px;padding:30px;background-color: rgba(11, 88, 152,.8);col
         background-color: #fff;    transform: scale(1);
     }
 }
-.portfolio {
+.portfolio {padding:50px 0 100px;
     h1+p {width:900px;}
     .svg-defs {position:absolute;width:0;height:0;}
-    .latest-work {margin: 0 0;  padding-bottom: 80px; position:relative;  
+    .latest-work {position:relative;  
         .bit-left {width:34px;height:56px;background:url(../img/portfolio.png);transform:rotate(180deg);position:absolute;left:-30px;top:140px;transition:background .3s;cursor:pointer;}
         .bit-right {width:34px;height:56px;background:url(../img/portfolio.png);position:absolute;right:-30px; top:140px;transition:background .3s;cursor:pointer;}
         .bit-left:hover,.bit-right:hover {background:url(../img/portfolio-hover.png);}
@@ -94,7 +98,7 @@ header h1+p {width:980px;padding:30px;background-color: rgba(11, 88, 152,.8);col
     .latest-work svg .hover {  opacity: 0; transform: scale(.8); transform-origin: 50%; transition: 0.25s ease; }
     .latest-work svg a:hover .hover {opacity: 1; transform: scale(1);}
     .latest-work .col-itm {
-        text-align: center;
+        outline: none; text-align: center;
         .title {font-size:20px;}
         .info a {border-top: 1px solid #ccc;padding: 5px 40px 0 25px ;margin:5px 0;display: inline-block;font-weight:700;}
         .info a:before { width: 15px; height: 15px; content: '';  display: inline-block;  margin-right: 5px; background: url(../img/link-icon.png) no-repeat 0 0;}
@@ -148,7 +152,7 @@ header h1+p {width:980px;padding:30px;background-color: rgba(11, 88, 152,.8);col
         p:nth-child(4):before {content:'8'; padding: 14px 16px;}
     }
     .bitrix-slider {position:relative;left: 50px; margin: 35px 0;        
-        .slick-slide {opacity:.8;transition:.3s;}
+        .slick-slide {opacity:.8;transition:.3s;outline: none;}
         .slick-slide:hover {opacity:1;}
         .bit-left {width:23px;height:44px;background:url(../img/bit-left.png);position:absolute;left:-45px;cursor:pointer;transition:background .3s;}
         .bit-right {width:23px;height:44px;transform:rotate(180deg);background:url(../img/bit-left.png);position:absolute;right:-20px; top:0px;cursor:pointer;transition:background .3s;}
@@ -157,6 +161,8 @@ header h1+p {width:980px;padding:30px;background-color: rgba(11, 88, 152,.8);col
     }
 }
 .contacts {position:relative;
+    h1 {margin-top:70px;}
+    h1+p {margin-bottom:50px;}
     .map-bg {height:450px;}
     .footer {height:100px;background-color: #0b5998;
         p {margin:auto 100px auto 0;padding:40px 0;color:#fff;display:inline-block;vertical-align:middle;}
@@ -166,7 +172,7 @@ header h1+p {width:980px;padding:30px;background-color: rgba(11, 88, 152,.8);col
         .link-fb {background:transparent url(../img/link-fb.png) center no-repeat;}
         .link-youtube {background:transparent url(../img/link-youtube.png) center no-repeat;}
     }
-    .bot-form {width:500px;height:500px;padding:30px;position:absolute;top:176px;right:15%;background-color: #0b5998;color:#fff;
+    .bot-form {width:500px;height:500px;padding:30px;position:absolute;top:187px;right:15%;background-color: #0b5998;color:#fff;
         p {font-size: 19px;line-height: 30px;}
         p:before {padding:0 20px 0 40px;}
         p.call-number:before {content:url(../img/tel-icon.png)}

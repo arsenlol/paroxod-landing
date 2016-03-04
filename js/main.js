@@ -1,3 +1,9 @@
+$('nav a').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 500);
+    return false;
+});
 
 $(document).ready(function() {
   $('.result').magnificPopup({type:'image'});
@@ -10,6 +16,7 @@ function initialize()
 {
 var mapProp = {
   center:myCenter,
+  scrollwheel: false,
   zoom:15,
   mapTypeId:google.maps.MapTypeId.ROADMAP
   };
@@ -44,3 +51,4 @@ $('.latest-work').slick({
   prevArrow: '<div class="bit-left"></div>',
   nextArrow: '<div class="bit-right"></div>',
 });
+
