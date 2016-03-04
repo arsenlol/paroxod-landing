@@ -1,15 +1,47 @@
-$('nav a').click(function(){
-    $('html, body').animate({
-        scrollTop: $( $.attr(this, 'href') ).offset().top
-    }, 500);
-    return false;
+
+$(document).ready(function() { 
+	/*Scroll-top arrow*/
+	if ($('.navigation').length) {
+    var scrollTrigger = 20, // px
+        showFixedNav = function () {
+            var scrollTop = $(window).scrollTop();
+            if (scrollTop > scrollTrigger) {
+                $('.navigation').addClass('nav-fixed');
+				
+            } else {
+                $('.navigation').removeClass('nav-fixed');
+				
+            }
+        };
+    showFixedNav();
+    $(window).on('scroll', function () {
+        showFixedNav();
+    });
+   }
 });
 
+// Плавный переход к якорю
+$('nav a').click(function(){
+    if ($(".navigation").hasClass("nav-fixed")) {
+        $('html, body').animate({
+            scrollTop: $( $.attr(this, 'href') ).offset().top-100
+        }, 500);
+        return false;
+    } else {
+        $('html, body').animate({
+            scrollTop: $( $.attr(this, 'href') ).offset().top-220
+        }, 500);
+        return false;
+    }
+    
+});
+
+// Галерея для сертификатов
 $(document).ready(function() {
   $('.result').magnificPopup({type:'image'});
 });
 
-// Карта
+// Карта  --------------------------------
 var myCenter=new google.maps.LatLng(46.464522, 30.716858);
 
 function initialize()
@@ -35,6 +67,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 //--------------------------------
 
+// Слайдер битрикс
 $('.bitrix-slider').slick({
   slidesToShow: 4,
   slidesToScroll: 1,
@@ -43,7 +76,7 @@ $('.bitrix-slider').slick({
   nextArrow: '<div class="bit-right"></div>',
 });
 
-
+// слайдер портфолио
 $('.latest-work').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
