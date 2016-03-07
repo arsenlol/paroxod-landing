@@ -65,8 +65,8 @@ header {
   margin: 0 0 0 20px;
   padding: 20px; }
 
-.nav-fixed {width: 100%;position: fixed;left: 37.5%;margin-left: -37.5%;background-color: #0b5998; border-bottom:1px solid #f9f9f9;z-index:2;transition:background 3.s;}
-.nav-fixed .logo, .nav-fixed nav {margin:30px 0;}
+.nav-fixed {width: 100%;position: fixed;left: 37.5%;margin-left: -37.5%;background-color: #0b5998; border-bottom:1px solid #f9f9f9;z-index:2;}
+.nav-fixed .logo, .nav-fixed nav {margin:10px 0;}
 
 header nav {
   margin-top: 50px;
