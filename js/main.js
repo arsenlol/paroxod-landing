@@ -24,12 +24,12 @@ $(document).ready(function() {
 $('nav a').click(function(){
     if ($(".navigation").hasClass("nav-fixed")) {
         $('html, body').animate({
-            scrollTop: $( $.attr(this, 'href') ).offset().top-100
+            scrollTop: $( $.attr(this, 'href') ).offset().top-60
         }, 500);
         return false;
     } else {
         $('html, body').animate({
-            scrollTop: $( $.attr(this, 'href') ).offset().top-220
+            scrollTop: $( $.attr(this, 'href') ).offset().top-180
         }, 500);
         return false;
     }
