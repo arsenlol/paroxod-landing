@@ -72,7 +72,7 @@ $('.bitrix-slider').slick({
   slidesToScroll: 1,
   arrows: true,
   prevArrow: '<div class="bit-left"></div>',
-  nextArrow: '<div class="bit-right"></div>',
+  nextArrow: '<div class="bit-right"></div>'
 });
 
 // слайдер портфолио
@@ -81,6 +81,14 @@ $('.latest-work').slick({
   slidesToScroll: 1,
   arrows: true,
   prevArrow: '<div class="bit-left"></div>',
-  nextArrow: '<div class="bit-right"></div>',
+  nextArrow: '<div class="bit-right"></div>'
 });
 
+// слайдер сотрудников
+$('.production section').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  arrows: true,
+  prevArrow: '<div class="bit-left"></div>',
+  nextArrow: '<div class="bit-right"></div>'
+});

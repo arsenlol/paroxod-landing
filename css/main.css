@@ -353,7 +353,8 @@ header h1 + p {
     -o-transition: all 0.3s ease;
     width: 160px;
     height: 160px;
-    border-radius: 50%; }
+    border-radius: 50%; 
+margin: 0 auto;}
   .team .mate:hover img {
     filter: none;
     /* Applies to FF + IE */
@@ -378,6 +379,28 @@ header h1 + p {
     line-height: 24px;
     display: block;
     margin: 0 auto; }
+.production .slick-slide:focus {outline:none;}
+    .production .bit-left {
+      width: 34px;
+      height: 56px;
+      background: url(../img/portfolio.png);
+      transform: rotate(180deg);
+      position: absolute;
+      left: -80px;
+      top: 140px;
+      transition: background .3s;
+      cursor: pointer; }
+    .production .bit-right {
+      width: 34px;
+      height: 56px;
+      background: url(../img/portfolio.png);
+      position: absolute;
+      right: -80px;
+      top: 140px;
+      transition: background .3s;
+      cursor: pointer; }
+    .production .bit-left:hover, .production .bit-right:hover {
+      background: url(../img/portfolio-hover.png); }
   .team .result {
     display: block;
     border-style: solid;
