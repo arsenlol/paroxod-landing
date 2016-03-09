@@ -1,6 +1,8 @@
 body {
   font-family: panton;
-  font-size: 16px; }
+  font-size: 16px;
+    overflow-x:hidden;
+    }
   body h1 {
     font-size: 50px;
     font-weight: 700;
@@ -65,8 +67,9 @@ header {
   margin: 0 0 0 20px;
   padding: 20px; }
 
-.nav-fixed {width: 100%;position: fixed;left: 37.5%;margin-left: -37.5%;background-color: #0b5998; border-bottom:1px solid #f9f9f9;z-index:2;}
-.nav-fixed .logo, .nav-fixed nav {margin:10px 0;}
+
+.nav-fixed {width: 700px; margin:0 auto; position: fixed;background-color: #0f7ed9; z-index:2; text-align:center;box-shadow: 0px 2px 15px -1px rgba(0,0,0,.5);padding: 0px 0 5px; margin: -10px 25px 0;border-bottom-left-radius: 20px;border-bottom-right-radius: 20px;left:33%;}
+
 
 header nav {
   margin-top: 50px;

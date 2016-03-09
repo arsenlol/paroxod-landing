@@ -4,13 +4,12 @@ $(document).ready(function() {
 	if ($('.navigation').length) {
     var scrollTrigger = 20, // px
         showFixedNav = function () {
+            
             var scrollTop = $(window).scrollTop();
             if (scrollTop > scrollTrigger) {
-                $('.navigation').addClass('nav-fixed');
-				
+                $('.nav-fixed').fadeIn();
             } else {
-                $('.navigation').removeClass('nav-fixed');
-				
+				$('.nav-fixed').fadeOut();
             }
         };
     showFixedNav();
@@ -22,14 +21,14 @@ $(document).ready(function() {
 
 // Плавный переход к якорю
 $('nav a').click(function(){
-    if ($(".navigation").hasClass("nav-fixed")) {
+    if ($(".nav-fixed").css("display","none")) {
         $('html, body').animate({
-            scrollTop: $( $.attr(this, 'href') ).offset().top-60
+            scrollTop: $( $.attr(this, 'href') ).offset().top+10
         }, 500);
         return false;
     } else {
         $('html, body').animate({
-            scrollTop: $( $.attr(this, 'href') ).offset().top-180
+            scrollTop: $( $.attr(this, 'href') ).offset().top-70
         }, 500);
         return false;
     }
